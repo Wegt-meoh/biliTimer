@@ -1,6 +1,9 @@
 function addTimer() {
   // 获取刷新按钮
   let targetButton = document.querySelector(".primary-btn.roll-btn");
+  if (!targetButton) {
+    return;
+  }
   // 时间间隔单位毫秒
   let interval = 6000;
   let timer = null;
